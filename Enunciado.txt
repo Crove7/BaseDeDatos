@@ -1,0 +1,9 @@
+//Hacer un enunciado de lo que vamos a realizar
+
+Se pide que se gestione un hotel con sus caracteristicas, con las siguientes caracteristicas:
+-Seguimiento de las habitaciones con sus respectivos atributos.
+-Seguimiento de los ambientes de dichas habitaciones.
+-Conteo de Clientes con sus atributos.
+-El hotel brinda Diversos servicios, almacenar y gestionar dichos servicios.
+-Se quiere saber los empleados sus roles y sus datos.
+-Un Supervisor con sus caracteristicas maneja el hotel y dirige a los empleados.
