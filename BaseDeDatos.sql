@@ -42,7 +42,6 @@ CREATE TABLE Habitacion(
     nombre_piso VARCHAR(25),
     id_hotel INT,
     FOREIGN KEY (id_hotel) REFERENCES Hotel (id_hotel)
-    /* numero_piso INT(2) NOT NULL*/
 );
 
 CREATE TABLE Ambiente(
