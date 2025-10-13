@@ -1,4 +1,3 @@
-DROP DATABASE IF EXISTS apphotel;
 CREATE DATABASE appHotel;
 USE appHotel;
 
@@ -93,74 +92,139 @@ CREATE TABLE empleado_reserva (
 
 -- Inserts
 
+-- Inserts supervisor
 INSERT INTO Supervisor (DNI, fecha_asignacion, telefono, estado_laboral, salario, nombre, apellido)
-VALUES 
-('12345678', '2023-01-10', '71234567', 'Activo', 3200.00, 'Carlos', 'Gómez'),
-('23456789', '2023-03-15', '72345678', 'Activo', 3400.00, 'Lucía', 'Martínez'),
-('34567890', '2023-05-20', '73456789', 'Inactivo', 3100.00, 'Luis', 'Fernández'),
-('45678901', '2023-07-25', '74567890', 'Activo', 3600.00, 'Ana', 'Pérez'),
-('56789012', '2023-09-05', '75678901', 'Suspendido', 3000.00, 'Marta', 'Díaz');
+VALUES ('67890123', '2023-10-01', '76789012', 'Activo', 3700.00, 'Diego', 'Suárez');
+INSERT INTO Supervisor (DNI, fecha_asignacion, telefono, estado_laboral, salario, nombre, apellido)
+VALUES ('78901234', '2023-11-12', '77890123', 'Activo', 3550.00, 'Valeria', 'Romero');
+INSERT INTO Supervisor (DNI, fecha_asignacion, telefono, estado_laboral, salario, nombre, apellido)
+VALUES ('89012345', '2024-01-20', '78901234', 'Inactivo', 3100.00, 'Pablo', 'Herrera');
+INSERT INTO Supervisor (DNI, fecha_asignacion, telefono, estado_laboral, salario, nombre, apellido)
+VALUES ('90123456', '2024-03-02', '79012345', 'Suspendido', 2950.00, 'Rocío', 'García');
+INSERT INTO Supervisor (DNI, fecha_asignacion, telefono, estado_laboral, salario, nombre, apellido)
+VALUES ('91234567', '2024-04-15', '79123456', 'Activo', 3650.00, 'Tomás', 'Ríos');
+INSERT INTO Supervisor (DNI, fecha_asignacion, telefono, estado_laboral, salario, nombre, apellido)
+VALUES ('92345678', '2024-05-28', '79234567', 'Activo', 3400.00, 'Elena', 'Morales');
+INSERT INTO Supervisor (DNI, fecha_asignacion, telefono, estado_laboral, salario, nombre, apellido)
+VALUES ('93456789', '2024-07-09', '79345678', 'Inactivo', 3000.00, 'Andrés', 'Vega');
+INSERT INTO Supervisor (DNI, fecha_asignacion, telefono, estado_laboral, salario, nombre, apellido)
+VALUES ('94567890', '2024-08-22', '79456789', 'Activo', 3750.00, 'Claudia', 'Navarro');
+INSERT INTO Supervisor (DNI, fecha_asignacion, telefono, estado_laboral, salario, nombre, apellido)
+VALUES ('95678901', '2024-09-30', '79567890', 'Activo', 3800.00, 'Hernán', 'Campos');
+INSERT INTO Supervisor (DNI, fecha_asignacion, telefono, estado_laboral, salario, nombre, apellido)
+VALUES ('96789012', '2024-10-12', '79678901', 'Suspendido', 2900.00, 'Natalia', 'Fuentes');
 
+-- Inserts Hotel
 INSERT INTO Hotel (direccion, calificacion, id_Supervisor)
-VALUES 
-('Av. Central 123', 4.5, 1),
-('Calle Norte 456', 3.8, 2),
-('Pasaje Sur 789', 4.0, 3),
-('Boulevard Este 321', 4.2, 4),
-('Callejón Oeste 654', 3.5, 5);
+VALUES ('Av. Independencia 123', 4.6, 1);
+INSERT INTO Hotel (direccion, calificacion, id_Supervisor)
+VALUES ('Calle Las Rosas 456', 3.9, 2);
+INSERT INTO Hotel (direccion, calificacion, id_Supervisor)
+VALUES ('Boulevard Central 789', 4.2, 3);
+INSERT INTO Hotel (direccion, calificacion, id_Supervisor)
+VALUES ('Ruta Provincial 12 Km 34', 4.0, 4);
+INSERT INTO Hotel (direccion, calificacion, id_Supervisor)
+VALUES ('Pasaje del Lago 321', 3.8, 5);
 
+-- Inserts Servicio
 INSERT INTO Servicio (descripcion, nombre_servicio, costo)
-VALUES
-('Limpieza diaria de habitación', 'Limpieza', 45.00),
-('Acceso a spa y sauna', 'Spa', 120.00),
-('Servicio a la habitación 24h', 'Room Service', 85.00),
-('Wi-Fi de alta velocidad', 'Internet', 30.00),
-('Desayuno buffet', 'Desayuno', 60.00);
+VALUES ('Baño privado con ducha, lavamanos y artículos de higiene personal', 'Baño estándar', 40.00);
+INSERT INTO Servicio (descripcion, nombre_servicio, costo)
+VALUES ('Baño con jacuzzi y amenities premium para relajación', 'Baño con jacuzzi', 120.00);
+INSERT INTO Servicio (descripcion, nombre_servicio, costo)
+VALUES ('Servicio de limpieza diaria y cambio de sábanas', 'Limpieza diaria', 35.00);
+INSERT INTO Servicio (descripcion, nombre_servicio, costo)
+VALUES ('Televisión por cable con más de 100 canales internacionales', 'TV por cable', 25.00);
+INSERT INTO Servicio (descripcion, nombre_servicio, costo)
+VALUES ('Mini bar con bebidas y snacks variados', 'Mini bar', 60.00);
 
+-- Inserts Habitacion
 INSERT INTO Habitacion (numero, precio_dias, estado, piso, id_hotel)
-VALUES 
-(101, 200.00, 'Disponible', 1, 1),
-(102, 250.00, 'Ocupada', 1, 1),
-(201, 180.00, 'Disponible', 2, 2),
-(202, 220.00, 'Mantenimiento', 2, 3),
-(301, 300.00, 'Ocupada', 3, 4);
+VALUES (101, 180.00, 'Disponible', 1, 1);
+INSERT INTO Habitacion (numero, precio_dias, estado, piso, id_hotel)
+VALUES (102, 250.00, 'Ocupada', 1, 2);
+INSERT INTO Habitacion (numero, precio_dias, estado, piso, id_hotel)
+VALUES (201, 300.00, 'Mantenimiento', 2, 3);
+INSERT INTO Habitacion (numero, precio_dias, estado, piso, id_hotel)
+VALUES (202, 220.00, 'Disponible', 2, 4);
+INSERT INTO Habitacion (numero, precio_dias, estado, piso, id_hotel)
+VALUES (301, 400.00, 'Ocupada', 3, 5);
 
+-- Inserts Cliente
 INSERT INTO Cliente (nombre, apellido, email, telefono, pais)
-VALUES 
-('Jorge', 'Santos', 'jorge@gmail.com', '74125896', 'Perú'),
-('María', 'Fernández', 'mariaf@gmail.com', '78945612', 'Chile'),
-('Pedro', 'Mendoza', 'pedro@yahoo.com', '75315948', 'Argentina'),
-('Laura', 'López', 'laura@gmail.com', '79864532', 'Uruguay'),
-('Ricardo', 'Torres', 'ricardo@hotmail.com', '71239876', 'Colombia');
+VALUES ('Santiago', 'Rivas', 'santiago.rivas@gmail.com', '71234567', 'Argentina');
+INSERT INTO Cliente (nombre, apellido, email, telefono, pais)
+VALUES ('Valentina', 'Suárez', 'valesuarez@hotmail.com', '72345678', 'Chile');
+INSERT INTO Cliente (nombre, apellido, email, telefono, pais)
+VALUES ('Mateo', 'Ortega', 'mateo.ortega@yahoo.com', '73456789', 'Perú');
+INSERT INTO Cliente (nombre, apellido, email, telefono, pais)
+VALUES ('Camila', 'Lagos', 'camila.lagos@gmail.com', '74567890', 'Uruguay');
+INSERT INTO Cliente (nombre, apellido, email, telefono, pais)
+VALUES ('Ignacio', 'Torres', 'ignacio.torres@hotmail.com', '75678901', 'Colombia');
 
+-- Inserts Empleado
 INSERT INTO Empleado (nombre, apellido, salario)
-VALUES 
-('Ana', 'Ramírez', 2000.00),
-('Luis', 'Pérez', 2200.00),
-('Sofía', 'López', 2100.00),
-('Martín', 'Castro', 2300.00),
-('Camila', 'Silva', 2150.00);
+VALUES ('Julieta', 'Mansilla', 2100.00);
+INSERT INTO Empleado (nombre, apellido, salario)
+VALUES ('Bruno', 'Salazar', 2300.00);
+INSERT INTO Empleado (nombre, apellido, salario)
+VALUES ('Lucía', 'Herrera', 2250.00);
+INSERT INTO Empleado (nombre, apellido, salario)
+VALUES ('Tomás', 'Vega', 2400.00);
+INSERT INTO Empleado (nombre, apellido, salario)
+VALUES ('Martina', 'Roldán', 2200.00);
 
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion)
-VALUES 
-('2025-10-01', '2025-10-05', '2025-10-10', 1000.00, 1, 1),
-('2025-10-02', '2025-10-06', '2025-10-08', 500.00, 2, 2),
-('2025-10-03', '2025-10-07', '2025-10-12', 800.00, 3, 3),
-('2025-10-04', '2025-10-10', '2025-10-15', 1100.00, 4, 4),
-('2025-10-05', '2025-10-11', '2025-10-14', 900.00, 5, 5);
+-- Inserts Reservan
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-01', '2025-10-05', '2025-10-10', 1000.00, 1, 1);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-02', '2025-10-06', '2025-10-08', 500.00, 2, 2);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-03', '2025-10-07', '2025-10-12', 800.00, 3, 3);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-04', '2025-10-10', '2025-10-15', 1100.00, 4, 4);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-05', '2025-10-11', '2025-10-14', 900.00, 5, 5);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-06', '2025-10-12', '2025-10-16', 1200.00, 1, 2);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-07', '2025-10-13', '2025-10-18', 950.00, 2, 3);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-08', '2025-10-14', '2025-10-19', 1100.00, 3, 4);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-09', '2025-10-15', '2025-10-20', 1250.00, 4, 5);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-10', '2025-10-16', '2025-10-21', 1050.00, 5, 1);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-11', '2025-10-17', '2025-10-22', 1300.00, 1, 3);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-12', '2025-10-18', '2025-10-23', 1150.00, 2, 4);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-13', '2025-10-19', '2025-10-24', 1000.00, 3, 5);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-14', '2025-10-20', '2025-10-25', 950.00, 4, 1);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-15', '2025-10-21', '2025-10-26', 1200.00, 5, 2);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-16', '2025-10-22', '2025-10-27', 1100.00, 1, 4);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-17', '2025-10-23', '2025-10-28', 1250.00, 2, 5);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-18', '2025-10-24', '2025-10-29', 1050.00, 3, 1);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-19', '2025-10-25', '2025-10-30', 1150.00, 4, 2);
+INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-20', '2025-10-26', '2025-10-31', 1300.00, 5, 3);
 
-INSERT INTO empleado_reserva (id_reserva, id_empleado)
-VALUES 
-(1, 1),
-(1, 2),
-(2, 3),
-(3, 4),
-(4, 5);
+-- Inserts empleado_reserva
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (1, 1);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (1, 2);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (2, 2);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (3, 3);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (3, 4);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (4, 5);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (5, 1);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (6, 2);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (6, 3);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (7, 4);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (8, 5);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (8, 1);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (9, 2);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (10, 3);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (11, 4);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (12, 5);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (13, 1);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (14, 2);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (15, 3);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (16, 4);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (17, 5);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (18, 1);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (19, 2);
+INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (20, 3);
 
-INSERT INTO habitacion_servicio (id_servicio, id_habitacion)
-VALUES 
-(1, 1),  
-(2, 1),  
-(3, 2),  
-(4, 3),  
-(5, 5); 
+-- Inserts habitacion_servicio
+INSERT INTO habitacion_servicio (id_servicio, id_habitacion) VALUES (1, 1);
+INSERT INTO habitacion_servicio (id_servicio, id_habitacion) VALUES (2, 1);
+INSERT INTO habitacion_servicio (id_servicio, id_habitacion) VALUES (3, 2);
+INSERT INTO habitacion_servicio (id_servicio, id_habitacion) VALUES (4, 3);
+INSERT INTO habitacion_servicio (id_servicio, id_habitacion) VALUES (5, 5);
