@@ -84,26 +84,26 @@ INSERT INTO Empleado (nombre, apellido, salario)
 VALUES ('Martina', 'Roldán', 2200.00);
 
 -- Inserts Reservan
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-01', '2025-10-05', '2025-10-10', 1000.00, 1, 1);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-02', '2025-10-06', '2025-10-08', 500.00, 2, 2);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-03', '2025-10-07', '2025-10-12', 800.00, 3, 3);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-04', '2025-10-10', '2025-10-15', 1100.00, 4, 4);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-05', '2025-10-11', '2025-10-14', 900.00, 5, 5);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-06', '2025-10-12', '2025-10-16', 1200.00, 1, 2);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-07', '2025-10-13', '2025-10-18', 950.00, 2, 3);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-08', '2025-10-14', '2025-10-19', 1100.00, 3, 4);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-09', '2025-10-15', '2025-10-20', 1250.00, 4, 5);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-10', '2025-10-16', '2025-10-21', 1050.00, 5, 1);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-11', '2025-10-17', '2025-10-22', 1300.00, 1, 3);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-12', '2025-10-18', '2025-10-23', 1150.00, 2, 4);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-13', '2025-10-19', '2025-10-24', 1000.00, 3, 5);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-14', '2025-10-20', '2025-10-25', 950.00, 4, 1);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-15', '2025-10-21', '2025-10-26', 1200.00, 5, 2);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-16', '2025-10-22', '2025-10-27', 1100.00, 1, 4);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-17', '2025-10-23', '2025-10-28', 1250.00, 2, 5);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-18', '2025-10-24', '2025-10-29', 1050.00, 3, 1);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-19', '2025-10-25', '2025-10-30', 1150.00, 4, 2);
-INSERT INTO Reservan (fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('2025-10-20', '2025-10-26', '2025-10-31', 1300.00, 5, 3);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('Pagado', '2025-10-01', '2025-10-05', '2025-10-10', 1000.00, 1, 1);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('Pagado', '2025-10-02', '2025-10-06', '2025-10-08', 500.00, 2, 2);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('Pagado', '2025-10-03', '2025-10-07', '2025-10-12', 800.00, 3, 3);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('Pagado', '2025-10-04', '2025-10-10', '2025-10-15', 1100.00, 4, 4);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('Pagado', '2025-10-05', '2025-10-11', '2025-10-14', 900.00, 5, 5);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('Pagado', '2025-10-06', '2025-10-12', '2025-10-16', 1200.00, 1, 2);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('Pagado', '2025-10-07', '2025-10-13', '2025-10-18', 950.00, 2, 3);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('Pagado', '2025-10-08', '2025-10-14', '2025-10-19', 1100.00, 3, 4);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ('Pagado', '2025-10-09', '2025-10-15', '2025-10-20', 1250.00, 4, 5);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ( 'Pagado', '2025-10-10', '2025-10-16', '2025-10-21', 1050.00, 5, 1);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ( 'Pagado', '2025-10-11', '2025-10-17', '2025-10-22', 1300.00, 1, 3);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ( 'Pagado', '2025-10-12', '2025-10-18', '2025-10-23', 1150.00, 2, 4);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ( 'Pagado', '2025-10-13', '2025-10-19', '2025-10-24', 1000.00, 3, 5);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ( 'Pagado', '2025-10-14', '2025-10-20', '2025-10-25', 950.00, 4, 1);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ( 'Pagado', '2025-10-15', '2025-10-21', '2025-10-26', 1200.00, 5, 2);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ( 'Pagado', '2025-10-16', '2025-10-22', '2025-10-27', 1100.00, 1, 4);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ( 'Pagado', '2025-10-17', '2025-10-23', '2025-10-28', 1250.00, 2, 5);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ( 'Pagado', '2025-10-18', '2025-10-24', '2025-10-29', 1050.00, 3, 1);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ( 'Pagado', '2025-10-19', '2025-10-25', '2025-10-30', 1150.00, 4, 2);
+INSERT INTO Reserva (estado_reserva, fecha_pago, fecha_inicio, fecha_final, monto, id_cliente, id_habitacion) VALUES ( 'Pagado', '2025-10-20', '2025-10-26', '2025-10-31', 1300.00, 5, 3);
 
 -- Inserts empleado_reserva
 INSERT INTO empleado_reserva (id_reserva, id_empleado) VALUES (1, 1);
